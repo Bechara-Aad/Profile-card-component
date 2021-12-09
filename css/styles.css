@@ -5,16 +5,40 @@ html {
 
 body {
   background-color: hsl(185, 75%, 39%);
-  padding: 1.5rem;
-  height: 100vh;
   font-family: Kumbh Sans, Arial, Helvetica, sans-serif;
   font-size: 18px;
+  overflow: hidden;
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -40rem left -40rem, bottom -35rem right -40rem;
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    background-position: top -40rem left -45rem, bottom -35rem right -45rem;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position: top -30rem left -30rem, bottom -30rem right -30rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  body {
+    background-position: top -35rem left -20rem, bottom -40rem right -20rem;
+  }
 }
 
 .container {
   display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 /*Grids*/
@@ -25,7 +49,7 @@ body {
 }
 
 .grid--1x2 {
-  grid-template-columns: 62% 38%;
+  grid-template-columns: 62fr 38fr;
 }
 
 .grid--1x3 {
@@ -37,18 +61,19 @@ body {
 .card {
   background-color: white;
   text-align: center;
-  max-width: 375px;
+  width: 300px;
+  min-width: 300px;
   overflow: hidden;
   border-radius: 4%;
+  align-items: center;
+  text-align: center;
+  box-shadow: 10px 10px 100px grey;
 }
 
 .card__body {
   margin-top: -3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   align-content: center;
-}
-
-.card__header {
 }
 
 .card__footer {
@@ -103,11 +128,8 @@ body {
   font-weight: 400;
 }
 
-/*   <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Bechara Aad</a>.
-      </div>
-
-      */
+.attribution {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+}
