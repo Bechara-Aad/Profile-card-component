@@ -26,12 +26,13 @@ body {
     background-position: top -30rem left -30rem, bottom -30rem right -30rem;
   }
 }
-
 @media screen and (min-width: 1140px) {
   body {
     background-position: top -35rem left -20rem, bottom -40rem right -20rem;
   }
 }
+
+
 
 .container {
   display: flex;
@@ -78,6 +79,14 @@ body {
 
 .card__footer {
   border-top: 1px solid lightgrey;
+}
+
+@media screen and (min-width: 1140px) {
+
+  .card {
+    width: 350px;
+    min-width: 350px; 
+  }
 }
 
 /*Content*/
@@ -133,3 +142,4 @@ body {
   position: fixed;
   bottom: 1rem;
 }
+

@@ -8,7 +8,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+  - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -43,6 +43,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+-Create intial repository Commit to Git and link local repository to Github
+-Breakdown the project into componenets
+-Figure out how to built each component seperately using HTML/CSS with a mobile 1st approch
+-Assemble the different componenets in the mobile form
+-adapt the designs to fit wider screens and desktop, by adding the necessary code
+-Run html/CSS file through W3 official validators, to look for any errors
+-Make sure to make the last commit/ push to Github before hosting the site (ex. for free on Netlify)
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -50,9 +58,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
