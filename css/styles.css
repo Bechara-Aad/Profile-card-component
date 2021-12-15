@@ -26,13 +26,6 @@ body {
     background-position: top -30rem left -30rem, bottom -30rem right -30rem;
   }
 }
-@media screen and (min-width: 1140px) {
-  body {
-    background-position: top -35rem left -20rem, bottom -40rem right -20rem;
-  }
-}
-
-
 
 .container {
   display: flex;
@@ -68,7 +61,7 @@ body {
   border-radius: 4%;
   align-items: center;
   text-align: center;
-  box-shadow: 10px 10px 100px grey;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.438);
 }
 
 .card__body {
@@ -82,10 +75,12 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
-
+  body {
+    background-position: top -35rem left -20rem, bottom -40rem right -20rem;
+  }
   .card {
     width: 350px;
-    min-width: 350px; 
+    min-width: 350px;
   }
 }
 
@@ -142,4 +137,3 @@ body {
   position: fixed;
   bottom: 1rem;
 }
-
